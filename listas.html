@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ac117f562b.js" crossorigin="anonymous"></script>
+    <title>Como aplicar estilos a las listas</title>
+    <style>
+html,body {
+            height: 100%;
+        }
+
+        body {
+            font-family: arial, sans-serif;
+            font-size: 1.125rem;
+        }
+        /* Como aplicar estilos a las listas */
+        ul{
+            list-style-type: square;
+        }
+        ol {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        #listaImagen {
+            list-style: url("images/tulips-5104311_1920.jpg") inside;
+        }
+        #listaPosicion {
+            list-style-position: inside;
+        }
+        /* Como crear un menu vertical */
+        #menuVertical {
+            background-color: #eee;
+            width: 50%;
+            list-style: none;
+            padding: 0 1px;
+        }
+        #menuVertical li {
+            border: 1px solid;
+        }
+        #menuVertical li a {
+            color: #000;
+            display: block;
+            padding: 12px;
+            text-decoration: none;
+        }
+        #menuVertical li a:hover {
+            background-color: #ccc;
+        }
+        #menuVertical li a.actual {
+            background-color: #4c4eaf;
+            color: #fff;
+        }
+        /* Como crear un menu horizontal */
+        header ul {
+            background-color: #333;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        header ul li {
+            float: left;
+        }
+        header ul li a {
+            display: block;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            padding: 14px 16px;
+        }
+        header ul li a:hover {
+            background-color: #111;
+        }
+        header ul li a.active {
+            background-color: #4c4eaf;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <ul>
+        <li><a href="#" class="active"><i class="fas fa-home"></i> Inicio</a></li>
+        <li><a href="#"><i class="fas fa-users"></i> Acerca de</a></li>
+        <li><a href="#"><i class="fas fa-globe"></i> Servicios</a></li>
+        <li><a href="#"><i class="far fa-envelope"></i> Contacto</a></li>
+    </ul>
+</header>
+
+    <h1>Aplicar estilos a las listas de HTML</h1>
+
+    <h2>Listas desordenadas</h2>
+    <ul>
+        <li>Ensaladas</li>
+        <li>Pescados y Mariscos</li>
+        <li>Carnes y Aves</li>
+    </ul>
+
+    <h2>Listas ordenadas</h2>
+    <ol>
+        <li>Primero</li>
+        <li>Segundo</li>
+        <li>Tercero</li>
+    </ol>
+
+    <h2>Listas con imagenes</h2>
+    <ul id="listaImagen">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+    </ul>
+    <h2>Controlar la identacion de elementos sobre la lista</h2>
+    <ul id="listaPosicion">
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad maiores
+        quia doloribus laborum sapiente, voluptas deleniti consequuntur
+        voluptate explicabo aperiam illum aliquam recusandae reiciendis! At
+        cumque nisi iure facilis corrupti!</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad maiores
+        quia doloribus laborum sapiente, voluptas deleniti consequuntur
+        voluptate explicabo aperiam illum aliquam recusandae reiciendis! At
+        cumque nisi iure facilis corrupti!</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad maiores
+        quia doloribus laborum sapiente, voluptas deleniti consequuntur
+        voluptate explicabo aperiam illum aliquam recusandae reiciendis! At
+        cumque nisi iure facilis corrupti!</li>
+    </ul>
+
+    <h2>Menu vertical</h2>
+    <ul id="menuVertical">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#" class="actual">Acerca de</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Contacto</a></li>
+    </ul>
+</body>
+</html>

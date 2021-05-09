@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos de Pseudo-Elementos</title>
+</head>
+<body>
+    <h1>Pseudo-Elementos CSS</h1>
+    <style>
+        /* Pseudo-elemento ::first-letter */
+        p#primeraLetra::first-letter {
+            color: red;
+            font-size: 30px;
+        }
+        /* Pseudo-elemento ::first-line */
+        p#primeraLinea::first-line {
+            color: blue;
+        }
+        /* Pseudo-elemento :::before y :::after */
+        p.error::before {
+            content: url(images/sky-5907605_1920.jpg);
+            vertical-align: middle;
+            padding-right: 3px;
+        }
+        p.error span::after {
+            content: "ATENCION:";
+            color: red;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+    <p id="primeraLetra">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum suscipit
+    debitis aliquid accusamus beatae eum esse molestias porro, tempora quo enim
+    eius maiores quasi nobis labore sapiente illo, corrupti doloribus!</p>
+    <p id="primeraLinea">Ipsam, quis quaerat? Nam ratione magnam, minima perspiciatis tenetur,
+    quas modi, veritatis consectetur earum dolor nesciunt voluptatibus iusto
+    accusantium? Eaque ad sunt pariatur quasi ipsam repellendus cum, commodi
+    dolorum laborum?</p>
+    <p class="error"><span></span>Officiis, odit distinctio dolorem amet libero laudantium minima qui
+    corporis deserunt eum maxime cupiditate ratione voluptate alias voluptatem
+    odio quasi explicabo et quisquam? Deleniti, delectus blanditiis magni
+    asperiores hic nulla?</p>
+    <p>Delectus pariatur veritatis, illo tempore magnam eaque saepe blanditiis
+    minus quasi ipsa ullam est ratione aut voluptatem eius eveniet deleniti
+    excepturi adipisci quis dolores nobis quas eligendi quaerat. Obcaecati,
+    numquam!</p>
+    <p class="error"><span></span>Quibusdam perspiciatis quas unde molestias numquam deleniti dolor libero
+    ut enim? Sed, maxime iste earum, veritatis sunt veniam, quas necessitatibus
+    vero id soluta in autem provident. Obcaecati placeat recusandae rerum?</p>
+</body>
+</html>

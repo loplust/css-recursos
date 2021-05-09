@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformar elementos con CCS</title>
+    <style>
+         html,body {
+            height: 100%;
+        }
+
+        body {
+            font-family: arial, sans-serif;
+            font-size: 1.125rem;
+        }
+        /* Como trasladar elementos */
+        #trasladar {
+            background-color: #ffff00;
+            width: 330px;
+            height: 200px;
+            border: 1px solid;
+            padding: 20px 30px;
+            margin: 20px 200px;
+            transform: translate(500px, 180px);
+            -webkit-transform: translate(500px, 180px);
+            -ms-transform: translate(500px, 180px);
+        }
+        /* Como escalar elementos */
+        #escalar {
+            background-color: #008000;
+            width: 440px;
+            height: 200px;
+            border: 1px solid;
+            color: #fff;
+            padding: 12px;
+            margin: 90px;
+            transform: scale(2, 0.90);
+            -webkit-transform: scale(2, 0.90);
+            -ms-transform: scale(2, 0.90);
+        }
+        /* Como sesgar elementos */
+        #sesgar {
+            background-color: #002980;
+            width: 500px;
+            height: 200px;
+            margin: 90px;
+            transform: skew(20deg, 16deg);
+            -webkit-transform: skew(20deg, 16deg);
+            -ms-transform: skew(20deg, 16deg);
+
+        }
+        /* Como rotar elementos */
+        #rotar {
+            background-color: #00ffff;
+            width: 200px;
+            height: 250px;
+            padding: 12px;
+            margin: 90px;
+            transform: rotate(-45deg) translate(240px, 250px);
+            -webkit-transform: rotate(-45deg) translate(240px, 250px);
+            -ms-transform: rotate(-45deg) translate(240px, 250px);
+        }
+
+        /* Como modificar el punto de origen */
+        #punto-origen{
+            background-color: #ffa500;
+            width: 500px;
+            height: 500px;
+            margin: 30px auto 90px;
+            -webkit-transition: -webkit-transform 3s ease-in 1s;
+            transition: -webkit-transform 3s ease-in 1s;
+            -o-transition: transform 3s ease-in 1s;
+            transition: transform 3s ease-in 1s;
+            transition: transform 3s ease-in 1s, -webkit-transform 3s ease-in 1s;
+            -webkit-transform-origin: 45% 90%;
+            -ms-transform-origin: 45% 90%;
+            transform-origin: 45% 90%;
+
+        }
+        #punto-origen:hover {
+            -webkit-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+            transform: rotate(360deg);
+            -webkit-transition: -webkit-transform 3s ease-in 1s;
+            transition: -webkit-transform 3s ease-in 1s;
+            -o-transition: transform 3s ease-in 1s;
+            transition: transform 3s ease-in 1s;
+            transition: transform 3s ease-in 1s, -webkit-transform 3s ease-in 1s;
+        }
+        /* Como crear efectos de profundidad */
+        #contenedor {
+            width: 400px;
+            height: 490px;
+            border: 1px solid;
+            padding: 50px;
+            margin: 30px auto;
+            -webkit-perspective: 200px;
+            perspective: 200px;
+        }
+        #elemento {
+            background-color: #ffff00;
+            width: 150px;
+            height: 150px;
+            padding: 40px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 30px;
+            text-align: center;
+            -webkit-transform: rotate3d(-1, 1, 1, 36deg);
+            transform: rotate3d(-1, 1, 1, 36deg);
+        }
+    </style>
+</head>
+<body>
+    <h1>Propiedad Transform</h1>
+
+    <h2>Funcion Translate()</h2>
+    <div id="trasladar">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut,
+    molestiae culpa optio eveniet repellat ea quos laborum saepe itaque
+    dignissimos delectus numquam inventore mollitia possimus. Ut neque
+    voluptatum fugiat doloribus.</div>
+
+    <h2>Funcion scale()</h2>
+    <div id="escalar">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+    Facilis, esse. Nihil qui officiis odit quia illum quod ullam facere maxime
+    aperiam ipsam consectetur, ea minus quae amet necessitatibus, molestias
+    repudiandae.</div>
+
+    <h2>Funcion skew()</h2>
+    <div id="sesgar"></div>
+
+    <h2>Funcion rotate()</h2>
+    <div id="rotar">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+    ex veniam, nam laborum omnis nobis veritatis magni error alias tenetur in
+    reiciendis iure sit. Ipsam dignissimos recusandae adipisci perferendis
+    ullam!</div>
+    
+    <h2> Propiedad Transform-origin</h2>
+    <div id="punto-origen"></div>
+
+    <h2>Transformaciones 3D</h2>
+    <div id="contenedor">
+        <div id="elemento">3D</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos de Pseudo-clases</title>
+    <style>
+        /* Pseudo-clases orientadas a enlaces */
+        a:link {
+            color: green;
+        }
+        a:visited {
+            color: red;
+        }
+        a:hover {
+            font-size: 18px;
+        }
+        a:active {
+            color: black;
+        }
+        /* Pseudo-clases orientadas a cualquier elemento*/
+        button:hover {
+            color: red;
+        }
+        button:active {
+            color: blue;
+        }
+        /* Pseudo-clases orientadas a formularios */
+        input:enabled {
+            background-color: lightyellow;
+        }
+        input:focus {
+            background-color: yellow;
+        }
+        input:disabled {
+            background-color: darkgrey;
+            cursor: not-allowed;
+        }
+        input[type="email"]:invalid {
+            border: 3px solid red;
+        }
+        input[type="radio"]:checked + label {
+            background-color: blue;
+            color: white;
+        }
+        input[type="checkbox"]:checked + label {
+            color: red;
+        }
+        /* Pseduo-clases segun la posicion o numero de un elemento */
+        div#posicionElemento p:first-child {
+            color: darkred;
+        }
+        div#posicionElemento p:nth-child(2) {
+            color: darkblue;
+        }
+        div#posicionElemento p:nth-child(3) {
+            color: darkorange;
+        }
+        div#posicionElemento p:last-child {
+            color: darkgreen;
+        }
+        ul li:nth-child(even) {
+            color: green;
+        }
+        ul li:nth-child(odd) {
+            color: blue;
+        }
+        /* Pseudo-clase del enesimo hijo :nth-child(an+b) */
+        ol li:nth-child(-n+5) {
+            background-color: yellow;
+        }
+        /* Pseudo-clase :NOT */
+        div#negacion p:not(:nth-child(2)) {
+            color: red;
+            font-size: 11px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo-clases CSS</h1>
+    <h2>Pseudo-clases orientadas a enlaces</h2>
+    <a href="#">bebamos cerveza</a>
+    <br><br>
+    <button>Pulsa aqui</button>
+
+    <h2>Pseudo-clases orientadas a formularios</h2>
+    <form action="">
+    <label for="SuNombre">Nombre:</label>
+    <input type="text" id="SuNombre" size="50"><br><br>
+
+    <label for="SuApellido">Apellido:</label>
+    <input type="text" id="SuNombre" size="50" disabled><br><br>
+
+    <label for="SuEmail">Email:</label>
+    <input type="email" id="SuEmail" size="50"><br><br>
+
+    Genero: <br>
+    <input type="radio" name="genero" id="hombre" value="masculino">
+    <label for="hombre">Masculino</label>
+
+    <input type="radio" name="genero" id="mujer" value="femenino">
+    <label for="mujer">Femenino</label><br><br>
+
+    Pasatiempo: <br>
+    <input type="checkbox" name="pasatiempo1" id="hiking" value="excursionismo">
+    <label for="hiking">Excursionismo</label>
+
+    <input type="checkbox" name="pasatiempo2" id="swimming" value="natacion">
+    <label for="swimming">Natacion</label>
+</form>
+
+<h2>Pseudo-clases basadas en la posicion / numero de los elementos</h2>
+<div id="posicionElemento">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ipsam
+    minus magni, impedit commodi harum dolore consectetur sed rem natus
+    architecto cumque, corrupti neque dolorem doloremque dignissimos, hic
+    temporibus a.</p>
+    <p>Facere beatae neque dicta, aut aliquid mollitia molestiae accusamus,
+    atque veniam debitis porro hic cum reiciendis accusantium, veritatis et
+    quisquam nihil dignissimos. Facere, dignissimos doloribus vitae suscipit
+    sint iste consectetur.</p>
+    <p>Cum expedita exercitationem voluptate recusandae sequi, excepturi quae.
+    Fuga neque odit molestiae officiis eligendi molestias nostrum veniam saepe
+    deserunt vitae. Quis quaerat illum dolore natus incidunt quidem doloribus,
+    corrupti architecto.</p>
+    <p>Culpa, aspernatur, aperiam in commodi ipsam suscipit quasi eos corrupti
+    incidunt iusto tempore autem? Omnis quos quas sunt tempore, nam quaerat
+    nisi, beatae necessitatibus praesentium dolore ullam inventore minima
+    cum.</p>
+</div>
+<ul>
+    <li>Manzanas</li>
+    <li>Uvas</li>
+    <li>Peras</li>
+    <li>Fresas</li>
+    <li>Moras</li>
+</ul>
+<h2>Pseudo-clase :nth-child(an+b)</h2>
+<ol>
+    <li>Primero</li>
+    <li>Segundo</li>
+    <li>Tercero</li>
+    <li>Cuarto</li>
+    <li>Quinto</li>
+    <li>Sexto</li>
+    <li>Septimo</li>
+    <li>Octavo</li>
+    <li>Noveno</li>
+    <li>Decimo</li>
+</ol>
+<h2>Pseudo-clase :not</h2>
+<div id="negacion">
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint est
+    aperiam error labore quod debitis repudiandae magni ipsum! Numquam totam
+    eligendi, dignissimos voluptatibus quidem rem mollitia impedit ipsa.
+    Aliquam, est.</p>
+    <p>Fuga, magni provident. Voluptas aperiam expedita debitis perferendis,
+    exercitationem quos ab corrupti velit reprehenderit sit repudiandae repellat
+    quia voluptatum! Voluptatum aspernatur et sunt suscipit earum sit
+    accusantium! Corrupti, necessitatibus quaerat.</p>
+    <p>Velit quis libero est sit magni, maxime ratione praesentium labore
+    pariatur distinctio quaerat nulla ex suscipit, temporibus amet consectetur?
+    Optio assumenda magnam accusamus hic. Hic autem impedit expedita tenetur
+    tempore.</p>
+</div>
+</body>
+</html>

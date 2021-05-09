@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos flotantes en CSS</title>
+    <style>
+        html,body {
+            height: 100%;
+        }
+        body {
+            font-family: arial, sans-serif;
+            font-size: 1.125rem;
+        }
+        img {
+            width: 30%;
+            height: auto;
+            float: left;
+            margin: 0.3em 0.9em 0.3em 0;
+        }
+        footer {
+            width: 95%;
+            height: auto;
+            font-size: 0.95rem;
+            margin-top: 2em;
+            padding: 0.2em 1em 2em;
+            border: 1px solid;
+            clear: both;
+        }
+        /* Crear contenido en columnas */
+        .caja {
+            width: 33.33%;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Elementos flotantes</h1>
+    <section>
+        <article>
+            <img src="images/cherry-blossoms-6196363_1920.jpg" alt="imagen de un cerezo">
+            <h2>Como cuidar tu cerezo</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Consequatur modi animi laborum vero illum minima nulla, distinctio
+            eos quo omnis voluptas nam sit exercitationem fuga? Quis quae maxime
+            quia dignissimos?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+            maiores temporibus provident iste dolor, sint vel. Sed magnam
+            reiciendis iusto reprehenderit perferendis itaque id illum, corrupti
+            ut amet praesentium dignissimos!</p>
+            <a href="#">Leer mas..</a>
+        </article>
+        <footer>
+            <h3>Etiquetas</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+        </footer>
+    </section>
+
+    <h2>Contenido en columnas</h2>
+    <div class="caja">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ea sed similique, deserunt doloremque ad facilis in eos, corrupti accusantium modi temporibus velit eaque, nulla perferendis. Porro placeat mollitia labore.</p>
+        <a href="#">Leer mas...</a>
+    </div>
+    <div class="caja">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ea sed similique, deserunt doloremque ad facilis in eos, corrupti accusantium modi temporibus velit eaque, nulla perferendis. Porro placeat mollitia labore.</p>
+        <a href="#">Leer mas...</a>
+    </div>
+    <div class="caja">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ea sed similique, deserunt doloremque ad facilis in eos, corrupti accusantium modi temporibus velit eaque, nulla perferendis. Porro placeat mollitia labore.</p>
+        <a href="#">Leer mas...</a>
+    </div>
+</body>
+</html>

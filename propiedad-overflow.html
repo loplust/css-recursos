@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como trabajar con contenidos que se desbordan</title>
+    <style>
+          html,body {
+            height: 100%;
+        }
+        body {
+            font-family: arial, sans-serif;
+            font-size: 1.125rem;
+        }
+        #contenedor {
+            background-color: gold;
+            width: 550px;
+            height: 200px;
+            border: 5px solid orange;
+            padding: 5px 20px;
+            overflow-x: hidden;
+            overflow-y: hidden;
+        }
+        #caja {
+            background-color: #ccc;
+            width: 643px;
+            height: 150px;
+        }
+        /* Maquetar un paginacion simple */
+        #paginacion {
+            background-color: #ccc;
+            width: 50%;
+            padding: 12px;
+            overflow: hidden;
+        }
+        #paginacion-derecha {
+            float: right;
+        }
+        #paginacion-izquierda {
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <!--<div id="contenedor">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa
+        facere, autem officiis provident maxime dolores itaque et possimus sed
+        blanditiis, quasi voluptatem? Quibusdam aspernatur modi neque,
+        repellendus quidem explicabo reiciendis.</p>
+        <p>Excepturi, incidunt! Nesciunt nisi excepturi odio sit laborum tenetur
+        dolorem! Incidunt quidem ab optio expedita? Nemo sunt, voluptatem rerum
+        excepturi repellat quam perferendis sed quaerat similique amet cum quasi
+        impedit.</p>
+        <p>Exercitationem facilis a architecto illum veritatis magnam, repellat
+        laboriosam cupiditate odit assumenda perferendis, aliquam aliquid facere
+        quo dicta similique? Eveniet porro architecto vero, quae mollitia eos
+        adipisci voluptate itaque nam?</p>
+
+        <div id="caja"></div>
+    </div> -->
+
+    <div id="paginacion">
+        <div id="paginacion-izquierda">Anterior</div>
+        <div id="paginacion-derecha">Siguiente</div>
+    </div>
+</body>
+</html>

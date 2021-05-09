@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,body {
+            height: 100%;
+        }
+
+        body {
+            font-family: arial, sans-serif;
+            font-size: 1.125rem;
+        }
+        img{
+            width: 30%;
+            height: auto;
+            float: left;
+            margin: 0.3em 0.9em 0.3em 0;
+        }
+
+        /* Media queries */
+        @media print {
+            body {
+                color: blue;
+            }
+            img {
+                display: none;
+            }
+        }
+        @media screen and (min-width:500px) and (max-width:992px) {
+            body {
+                background-color: #e0e0e0;
+            }
+            div {
+                margin: 0 0.90em;
+            }
+            img {
+                width: 45%;
+            }
+            h1 {
+                font-size: 1.5rem;
+            }
+            p {
+                font-size: 1.09rem;
+            }
+        }
+        @media not screen and (max-width: 500px) and (orientation: landscape){
+            div {
+                margin: 0 0.95em;
+            }
+            img {
+                width: 100%;
+                margin-bottom: 0.95em;
+            }
+            h1 {
+                font-size: 1.2rem;
+            }
+            p {
+                font-size: 0.95rem;
+                line-height: 1.5;
+                text-align: justify;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Consejos para adiestrar tu perro</h1>
+        <img src="images/sunset-5903426_1920.jpg" alt="Imagen de un perro">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+        deserunt veniam ipsam assumenda, modi facere consequatur laborum vero
+        dolorem perferendis dolorum fugiat corporis rerum iure nisi expedita
+        suscipit delectus. Exercitationem.</p>
+        <p>Aut perspiciatis molestiae architecto sint? Similique voluptatum
+        voluptate enim sit tempora veritatis sint suscipit, labore repellat
+        pariatur modi, laborum, a est in veniam error incidunt velit! Enim odit
+        perspiciatis assumenda?</p>
+        <p>Iure ea dignissimos ut unde eveniet, ratione accusantium hic
+        repudiandae voluptas quod inventore quasi obcaecati ad porro corrupti
+        aliquid itaque dicta. Deleniti aspernatur aliquam expedita, minus quis
+        libero est alias.</p>
+        <p>Nobis blanditiis, aperiam similique accusantium hic voluptate harum
+        quibusdam velit placeat dolorem, exercitationem, quis earum accusamus
+        adipisci soluta laborum dicta eaque? Eaque repellendus optio magni
+        consectetur blanditiis voluptate quo a.</p>
+        <p>Pariatur molestiae exercitationem maxime repudiandae ea debitis
+        voluptatibus? Odio explicabo numquam id assumenda veritatis fugit
+        voluptatum nobis ratione sapiente sint tempora molestias, impedit
+        excepturi, beatae similique blanditiis doloribus labore? Illo!</p>
+    </div>
+</body>
+</html>

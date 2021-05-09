@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propiedades Display y Visibility</title>
+    <style>
+         html {
+            box-sizing: border-box;
+        }
+        *,*::before, *::after {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: arial, sans-serif;
+            font-size: 1.125rem;
+        }
+        /* Ocultar elementos*/
+        #texto-invisible {
+            visibility: hidden;
+        }
+        #ocultar-texto {
+            color: #ff0000;
+            display: none;
+        }
+        /* Modificar el comportamiento de los elementos con la propiedad Display */
+        a {
+            background-color: #008000;
+            color: #fff;
+            margin: 12px 0;
+            display: block;
+        }
+        .caja {
+            background-color: #0000ff;
+            color: #fff;
+            width: 87%;
+            height: 130px;
+            margin: 20px 0;
+            display: inline;
+        }
+        .enLineaBloque {
+            background-color: #008000;
+            border: 1px solid;
+            color: #fff;
+            width: 25%;
+            height: 145px;
+            padding: 5px 0;
+            margin: 4px 0;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Como controlar la visualizacion de elementos</h1>
+
+    <h2>Propiedad Visibility</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quos
+    similique quas! Iste repudiandae soluta ducimus accusamus at commodi porro?
+    Laborum sit adipisci ab! Officiis sequi veritatis nobis delectus
+    mollitia!</p>
+    <p id="texto-invisible">Tenetur impedit est aspernatur, nemo similique dolorem consectetur cumque
+    architecto ipsum cupiditate officia incidunt amet quibusdam quasi ex
+    exercitationem non dolore. Corrupti deserunt labore exercitationem alias
+    accusantium neque dignissimos provident?</p>
+    <p>Velit porro qui perspiciatis blanditiis, ad placeat nostrum incidunt
+    fugiat! Laudantium rem temporibus quia dolor, voluptate ad culpa possimus
+    cumque animi corrupti, aut in similique eius unde cum, quae voluptas!</p>
+    <h2>Propiedad Display: none</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus
+    corrupti adipisci ducimus asperiores. Tenetur minus ducimus, quos blanditiis
+    ipsam voluptas debitis a. Rem qui culpa soluta eveniet blanditiis deserunt
+    vitae.</p>
+    <p id="ocultar-texto">Iure repellendus blanditiis quas consectetur aspernatur quia inventore
+    nihil maxime explicabo omnis! Deserunt rerum eveniet iste vitae, vel eos
+    nisi magni culpa et amet consequuntur tenetur possimus saepe voluptatibus
+    nam!</p>
+    <p>Veritatis explicabo exercitationem aperiam nostrum dolorum rerum quos
+    sapiente veniam iste pariatur odit animi incidunt nesciunt saepe, sint
+    laborum illo, molestiae quo fugit. Beatae, pariatur veritatis harum rerum
+    quis commodi!</p>
+    <h2>Propiedad Display: block</h2>
+    <a href="#">Inicio</a>
+    <a href="#">Servicios</a>
+    <a href="#">Contacto</a>
+    <h2>Propiedad Display: inline</h2>
+    <div class="caja">Ejemplo 1</div>
+    <div class="caja">Ejemplo 2</div>
+    <div class="caja">EJemplo 3</div>
+    <h2>Propiedad Display: inline-block</h2>
+    <span class="enLineaBloque">Caja 1</span>
+    <span class="enLineaBloque">Caja 2</span>
+    <span class="enLineaBloque">Caja 3</span>
+</body>
+</html>
